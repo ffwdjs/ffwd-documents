@@ -1,0 +1,7 @@
+{
+  "name": "mocha",
+  "main": "index.js",
+  "_source": "/home/robert/sites/custom_modules/ffwd-documents/node_modules/mocha/mocha.js",
+  "_target": "*",
+  "_originalSource": "./node_modules/mocha/mocha.js"
+}

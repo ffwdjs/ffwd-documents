@@ -1,0 +1,10 @@
+{
+  "generator-ffwd": {
+    "projectName": "ffwd-documents",
+    "projectDesc": "A set of FFWD utilities to create HTML versions or viewers of documents.",
+    "projectVersion": "0.0.1",
+    "projectAuthor": "Valentin Vago <valentin.vago@gmail.com>",
+    "stylesCompiler": "none",
+    "scriptsCompiler": "browserify"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "name": "ffwd-documents",
+  "version": "0.0.1",
+  "keywords": [
+    "ffwd-app"
+  ],
+  "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower i && ./node_modules/grunt-cli/bin/grunt serve",
+    "test": "mocha -R tap test/server/specs/",
+    "start": "node app.js"
+  },
+  "ffwd": {
+    "scriptsCompiler": "browserify",
+    "stylesCompiler": "none",
+    "dist": "dist",
+    "client": "client"
+  },
+  "dependencies": {
+    "amdefine": "^0.1.0",
+    "async": "^0.9.0",
+    "backbone": "^1.1.2",
+    "bower": "^1.3.5",
+    "ffwd-utils": "git://github.com/zeropaper/ffwd-utils",
+    "grunt": "^0.4.5",
+    "grunt-browserify": "^2.1.0",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-compass": "^0.8.0",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-less": "^0.11.2",
+    "grunt-contrib-requirejs": "^0.4.4",
+    "grunt-contrib-uglify": "^0.5.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-express": "^1.3.5",
+    "grunt-newer": "^0.7.0",
+    "highlight.js": "^8.0.0",
+    "jquery": "^2.1.1",
+    "karma-requirejs": "^0.2.2",
+    "load-grunt-tasks": "^0.5.0",
+    "marked": "^0.3.2",
+    "moment": "^2.7.0",
+    "mysql": "^2.3.2",
+    "node-polyglot": "^0.4.0",
+    "requirejs": "^2.1.14",
+    "time-grunt": "^0.3.2",
+    "underscore": "^1.6.0",
+    "underscore.string": "^2.3.3",
+    "validator": "^3.16.0",
+    "yfm": "^0.2.0"
+  },
+  "optional": {
+    "ffwd-modeling": "git+ssh://git@github.com:ffwdjs/ffwd-modeling",
+    "ffwd-auth": "git+ssh://git@github.com:ffwdjs/ffwd-auth",
+    "ffwd-net": "git+ssh://git@github.com:ffwdjs/ffwd-net"
+  },
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-jsdoc": "^0.5.6",
+    "grunt-karma": "^0.8.3",
+    "grunt-mocha": "^0.4.11",
+    "jsdoc": "^3.3.0-alpha8",
+    "karma": "^0.12.16",
+    "karma-chrome-launcher": "^0.1.4",
+    "karma-mocha": "^0.1.4",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "karma-requirejs": "^0.2.2",
+    "load-grunt-tasks": "^0.5.0",
+    "mocha": "^1.20.1",
+    "supertest": "^0.13.0"
+  }
+}

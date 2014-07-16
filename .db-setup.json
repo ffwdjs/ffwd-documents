@@ -1,0 +1,5 @@
+{
+  "prod": "mysql://ffwd_documents:insecure@localhost/ffwd_documents_prod",
+  "dev": "mysql://ffwd_documents:insecure@localhost/ffwd_documents_dev",
+  "test": "mysql://ffwd_documents:insecure@localhost/ffwd_documents_test"
+}

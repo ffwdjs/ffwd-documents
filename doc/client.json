@@ -1,227 +1,19 @@
 [
   {
-    "comment": "/**\n   * The FFWD base Model.\n   */",
-    "meta": {
-      "filename": "model.js",
-      "lineno": 27,
-      "path": "node_modules/ffwd-modeling/client/scripts"
-    },
-    "description": "The FFWD base Model.",
-    "name": "BaseModel",
-    "longname": "<anonymous>~BaseModel",
-    "kind": "member",
-    "memberof": "<anonymous>",
-    "scope": "inner"
-  },
-  {
-    "comment": "/**\n     * An object in which links to other resources are stored\n     *\n     * @type {Object}\n     */",
-    "meta": {
-      "filename": "model.js",
-      "lineno": 33,
-      "path": "node_modules/ffwd-modeling/client/scripts"
-    },
-    "description": "An object in which links to other resources are stored",
-    "type": {
-      "names": [
-        "Object"
-      ]
-    },
-    "optional": null,
-    "nullable": null,
-    "variable": null,
-    "defaultvalue": null,
-    "name": "_links",
-    "longname": "_links",
-    "kind": "member",
-    "scope": "global"
-  },
-  {
-    "comment": "/**\n     * Method to fetch linked resources\n     *\n     * @param  {string} linkName  [description]\n     * @param  {object} options   [description]\n     *\n     * @return {*}                [description]\n     */",
-    "meta": {
-      "filename": "model.js",
-      "lineno": 104,
-      "path": "node_modules/ffwd-modeling/client/scripts",
-      "vars": {
-        "options": null
-      }
-    },
-    "description": "Method to fetch linked resources",
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string"
-          ]
-        },
-        "optional": null,
-        "nullable": null,
-        "variable": null,
-        "defaultvalue": null,
-        "description": "[description]",
-        "name": "linkName"
-      },
-      {
-        "type": {
-          "names": [
-            "object"
-          ]
-        },
-        "optional": null,
-        "nullable": null,
-        "variable": null,
-        "defaultvalue": null,
-        "description": "[description]",
-        "name": "options"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "*"
-          ]
-        },
-        "optional": null,
-        "nullable": null,
-        "variable": null,
-        "defaultvalue": null,
-        "description": "[description]"
-      }
-    ],
-    "name": "getLink",
-    "longname": "getLink",
-    "kind": "function",
-    "scope": "global"
-  },
-  {
-    "comment": "/**\n     * Method to generate default values for the model\n     *\n     * @return {object} default attributes\n     */",
-    "meta": {
-      "filename": "model.js",
-      "lineno": 125,
-      "path": "node_modules/ffwd-modeling/client/scripts",
-      "vars": {
-        "defaults": null,
-        "": null
-      }
-    },
-    "description": "Method to generate default values for the model",
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "object"
-          ]
-        },
-        "optional": null,
-        "nullable": null,
-        "variable": null,
-        "defaultvalue": null,
-        "description": "default attributes"
-      }
-    ],
-    "name": "defaults",
-    "longname": "defaults",
-    "kind": "function",
-    "scope": "global"
-  },
-  {
-    "comment": "/**\n     * Generates a validator callback\n     *\n     * @param  {string|array} keys      of the attributes to be tested\n     * @param  {string|array} names     of the callbacks to use\n     * @param  {array} [args]           description\n     *\n     * @return {function}               description\n     */",
-    "meta": {
-      "filename": "model.js",
-      "lineno": 208,
-      "path": "node_modules/ffwd-modeling/client/scripts",
-      "vars": {
-        "keys": null,
-        "names": null,
-        "args": null,
-        "": null
-      }
-    },
-    "description": "Generates a validator callback",
-    "params": [
-      {
-        "type": {
-          "names": [
-            "string",
-            "array"
-          ]
-        },
-        "optional": null,
-        "nullable": null,
-        "variable": null,
-        "defaultvalue": null,
-        "description": "of the attributes to be tested",
-        "name": "keys"
-      },
-      {
-        "type": {
-          "names": [
-            "string",
-            "array"
-          ]
-        },
-        "optional": null,
-        "nullable": null,
-        "variable": null,
-        "defaultvalue": null,
-        "description": "of the callbacks to use",
-        "name": "names"
-      },
-      {
-        "type": {
-          "names": [
-            "array"
-          ]
-        },
-        "optional": true,
-        "nullable": null,
-        "variable": null,
-        "defaultvalue": null,
-        "description": "description",
-        "name": "args"
-      }
-    ],
-    "returns": [
-      {
-        "type": {
-          "names": [
-            "function"
-          ]
-        },
-        "optional": null,
-        "nullable": null,
-        "variable": null,
-        "defaultvalue": null,
-        "description": "description"
-      }
-    ],
-    "name": "makeValidator",
-    "longname": "makeValidator",
-    "kind": "function",
-    "scope": "global"
-  },
-  {
-    "comment": "/**\n * @module ffwd-net\n * @description FFWD utilities for networking\n */",
+    "comment": "/**\n   * Utility to get a value deep in a object.\n   *\n   * @param {Object} obj          - an object to dig in\n   * @param {string} varPath      - the path at which the value is searched\n   * @param {*} newValue          - new value at the path, will not throw errors if not undefined\n   * @returns {*}\n   * @throws an error telling that the value can not be found at the specified path\n   */",
     "meta": {
       "filename": "index.js",
-      "lineno": 3,
-      "path": "node_modules/ffwd-net/client/scripts"
-    },
-    "kind": "module",
-    "name": "ffwd-net",
-    "description": "FFWD utilities for networking",
-    "longname": "module:ffwd-net"
-  },
-  {
-    "comment": "/**\n   * Utility to get a value deep in a object.\n   *\n   * @param obj {Object}          - an object to dig in\n   * @param varPath {string} - the path at which the value is searched\n   * @returns {*}\n   * @throws an error telling that the value can not be found at the specified path\n   */",
-    "meta": {
-      "filename": "index.js",
-      "lineno": 38,
+      "lineno": 42,
       "path": "node_modules/ffwd-utils/client/scripts",
       "vars": {
         "paths": null,
         "current": null,
-        "i": null
+        "i": null,
+        "val": null,
+        "name": null,
+        "set": null,
+        "setNow": null,
+        "current[undefined]": null
       }
     },
     "description": "Utility to get a value deep in a object.",
@@ -251,6 +43,19 @@
         "defaultvalue": null,
         "description": "the path at which the value is searched",
         "name": "varPath"
+      },
+      {
+        "type": {
+          "names": [
+            "*"
+          ]
+        },
+        "optional": null,
+        "nullable": null,
+        "variable": null,
+        "defaultvalue": null,
+        "description": "new value at the path, will not throw errors if not undefined",
+        "name": "newValue"
       }
     ],
     "returns": [
@@ -283,12 +88,8 @@
   },
   {
     "files": [
-      "/home/robert/sites/custom_modules/ffwd-documents/client/scripts/index.js",
-      "/home/robert/sites/custom_modules/ffwd-documents/node_modules/ffwd-modeling/client/scripts/collection.js",
-      "/home/robert/sites/custom_modules/ffwd-documents/node_modules/ffwd-modeling/client/scripts/index.js",
-      "/home/robert/sites/custom_modules/ffwd-documents/node_modules/ffwd-modeling/client/scripts/model.js",
-      "/home/robert/sites/custom_modules/ffwd-documents/node_modules/ffwd-net/client/scripts/index.js",
-      "/home/robert/sites/custom_modules/ffwd-documents/node_modules/ffwd-utils/client/scripts/index.js"
+      "/home/vale/repos/ffwd-documents/client/scripts/index.js",
+      "/home/vale/repos/ffwd-documents/node_modules/ffwd-utils/client/scripts/index.js"
     ],
     "kind": "package",
     "name": null,

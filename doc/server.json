@@ -175,337 +175,87 @@
     "scope": "inner"
   },
   {
-    "comment": "/**\n * @namespace ffwd-modeling\n */",
+    "comment": "/**\n * find repositories of a project\n * @param  {string} [dir] a base directory (or module name)\n * @param  {string} [done] a base directory (or module name)\n * @return {array}     an array of paths to the directories haviing a repository\n */",
     "meta": {
       "filename": "index.js",
-      "lineno": 4,
-      "path": "node_modules/ffwd-modeling/server"
-    },
-    "kind": "namespace",
-    "name": "ffwd-modeling",
-    "longname": "ffwd-modeling"
-  },
-  {
-    "comment": "/**\n * _models cache\n */",
-    "meta": {
-      "filename": "index.js",
-      "lineno": 20,
-      "path": "node_modules/ffwd-modeling/server"
-    },
-    "description": "_models cache",
-    "name": "_models",
-    "longname": "_models",
-    "kind": "member",
-    "scope": "global"
-  },
-  {
-    "comment": "/**\n * _relations cache\n * @type {Object}\n */",
-    "meta": {
-      "filename": "index.js",
-      "lineno": 27,
-      "path": "node_modules/ffwd-modeling/server"
-    },
-    "description": "_relations cache",
-    "type": {
-      "names": [
-        "Object"
-      ]
-    },
-    "optional": null,
-    "nullable": null,
-    "variable": null,
-    "defaultvalue": null,
-    "name": "_relations",
-    "longname": "_relations",
-    "kind": "member",
-    "scope": "global"
-  },
-  {
-    "comment": "/**\n * _relationKeys cache\n * @type {Object}\n */",
-    "meta": {
-      "filename": "index.js",
-      "lineno": 34,
-      "path": "node_modules/ffwd-modeling/server"
-    },
-    "description": "_relationKeys cache",
-    "type": {
-      "names": [
-        "Object"
-      ]
-    },
-    "optional": null,
-    "nullable": null,
-    "variable": null,
-    "defaultvalue": null,
-    "name": "_relationKeys",
-    "longname": "_relationKeys",
-    "kind": "member",
-    "scope": "global"
-  },
-  {
-    "comment": "/**\n * _connections cache\n * @type {Object}\n */",
-    "meta": {
-      "filename": "index.js",
-      "lineno": 41,
-      "path": "node_modules/ffwd-modeling/server"
-    },
-    "description": "_connections cache",
-    "type": {
-      "names": [
-        "Object"
-      ]
-    },
-    "optional": null,
-    "nullable": null,
-    "variable": null,
-    "defaultvalue": null,
-    "name": "_connections",
-    "longname": "_connections",
-    "kind": "member",
-    "scope": "global"
-  },
-  {
-    "comment": "/**\n * _setupRelations\n * \n */",
-    "meta": {
-      "filename": "index.js",
-      "lineno": 86,
-      "path": "node_modules/ffwd-modeling/server",
+      "lineno": 21,
+      "path": "node_modules/ffwd-utils/server",
       "vars": {
+        "globbing": null,
+        "stripGit": null,
+        "done": null,
         "": null
       }
     },
-    "description": "_setupRelations",
-    "name": "_setupRelations",
-    "longname": "_setupRelations",
-    "kind": "function",
-    "scope": "global"
-  },
-  {
-    "comment": "/**\n * importModel\n * \n */",
-    "meta": {
-      "filename": "index.js",
-      "lineno": 126,
-      "path": "node_modules/ffwd-modeling/server",
-      "vars": {
-        "sequelized": null,
-        "imported": null,
-        "": null
-      }
-    },
-    "description": "importModel",
-    "name": "importModel",
-    "longname": "importModel",
-    "kind": "function",
-    "scope": "global"
-  },
-  {
-    "comment": "/**\n * isInstance\n * \n */",
-    "meta": {
-      "filename": "index.js",
-      "lineno": 203,
-      "path": "node_modules/ffwd-modeling/server"
-    },
-    "description": "isInstance",
-    "name": "isInstance",
-    "longname": "isInstance",
-    "kind": "function",
-    "scope": "global"
-  },
-  {
-    "comment": "/**\n * isCollection\n * \n */",
-    "meta": {
-      "filename": "index.js",
-      "lineno": 216,
-      "path": "node_modules/ffwd-modeling/server",
-      "vars": {
-        "test": null
-      }
-    },
-    "description": "isCollection",
-    "name": "isCollection",
-    "longname": "isCollection",
-    "kind": "function",
-    "scope": "global"
-  },
-  {
-    "comment": "/**\n * isCustomEventEmitter\n * \n */",
-    "meta": {
-      "filename": "index.js",
-      "lineno": 236,
-      "path": "node_modules/ffwd-modeling/server"
-    },
-    "description": "isCustomEventEmitter",
-    "name": "isCustomEventEmitter",
-    "longname": "isCustomEventEmitter",
-    "kind": "function",
-    "scope": "global"
-  },
-  {
-    "comment": "/**\n * deliverJSON\n * \n */",
-    "meta": {
-      "filename": "index.js",
-      "lineno": 247,
-      "path": "node_modules/ffwd-modeling/server",
-      "vars": {
-        "": null
-      }
-    },
-    "description": "deliverJSON",
-    "name": "deliverJSON",
-    "longname": "deliverJSON",
-    "kind": "function",
-    "scope": "global"
-  },
-  {
-    "comment": "/**\n * deliverHAL\n * \n */",
-    "meta": {
-      "filename": "index.js",
-      "lineno": 270,
-      "path": "node_modules/ffwd-modeling/server",
-      "vars": {
-        "": null
-      }
-    },
-    "description": "deliverHAL",
-    "name": "deliverHAL",
-    "longname": "deliverHAL",
-    "kind": "function",
-    "scope": "global"
-  },
-  {
-    "comment": "/**\n * sendOverride\n * \n */",
-    "meta": {
-      "filename": "index.js",
-      "lineno": 321,
-      "path": "node_modules/ffwd-modeling/server",
-      "vars": {
-        "send": null,
-        "res.originalSend": null,
-        "req": null,
-        "next": null,
-        "": null
-      }
-    },
-    "description": "sendOverride",
-    "name": "sendOverride",
-    "longname": "sendOverride",
-    "kind": "function",
-    "scope": "global"
-  },
-  {
-    "comment": "/**\n * allRequestsCallback\n * \n */",
-    "meta": {
-      "filename": "index.js",
-      "lineno": 378,
-      "path": "node_modules/ffwd-modeling/server",
-      "vars": {
-        "res.req": null,
-        "res.deliverJSON": null,
-        "res.deliverHAL": null,
-        "res.send": null
-      }
-    },
-    "description": "allRequestsCallback",
-    "name": "allRequestsCallback",
-    "longname": "allRequestsCallback",
-    "kind": "function",
-    "scope": "global"
-  },
-  {
-    "comment": "/**\n * @module ffwd-modeling\n * \n * @param  {Object} settings to be used to configure\n * @return {Function} a function to be use to get a {Model} \n */",
-    "meta": {
-      "filename": "index.js",
-      "lineno": 394,
-      "path": "node_modules/ffwd-modeling/server"
-    },
-    "kind": "module",
-    "name": "ffwd-modeling",
+    "description": "find repositories of a project",
     "params": [
       {
         "type": {
           "names": [
-            "Object"
+            "string"
           ]
         },
-        "optional": null,
+        "optional": true,
         "nullable": null,
         "variable": null,
         "defaultvalue": null,
-        "description": "to be used to configure",
-        "name": "settings"
+        "description": "a base directory (or module name)",
+        "name": "dir"
+      },
+      {
+        "type": {
+          "names": [
+            "string"
+          ]
+        },
+        "optional": true,
+        "nullable": null,
+        "variable": null,
+        "defaultvalue": null,
+        "description": "a base directory (or module name)",
+        "name": "done"
       }
     ],
     "returns": [
       {
         "type": {
           "names": [
-            "function"
+            "array"
           ]
         },
         "optional": null,
         "nullable": null,
         "variable": null,
         "defaultvalue": null,
-        "description": "a function to be use to get a {Model}"
+        "description": "an array of paths to the directories haviing a repository"
       }
     ],
-    "longname": "module:ffwd-modeling"
-  },
-  {
-    "comment": "/**\n * @namespace ffwd\n */",
-    "meta": {
-      "filename": "index.js",
-      "lineno": 4,
-      "path": "node_modules/ffwd-net/server"
-    },
-    "kind": "namespace",
-    "name": "ffwd",
-    "longname": "ffwd"
-  },
-  {
-    "comment": "/**\n * @namespace ffwd.server\n */",
-    "meta": {
-      "filename": "index.js",
-      "lineno": 8,
-      "path": "node_modules/ffwd-net/server"
-    },
-    "kind": "namespace",
-    "name": "server",
-    "memberof": "ffwd",
-    "longname": "ffwd.server",
+    "name": "repositories",
+    "longname": "utils.repositories",
+    "kind": "function",
+    "memberof": "utils",
     "scope": "static"
-  },
-  {
-    "comment": "/**\n * Server setup for use with grunt-express task\n * @memberof ffwd\n * @module server\n */",
-    "meta": {
-      "filename": "index.js",
-      "lineno": 12,
-      "path": "node_modules/ffwd-net/server"
-    },
-    "description": "Server setup for use with grunt-express task",
-    "memberof": "ffwd",
-    "kind": "module",
-    "name": "server",
-    "scope": "static",
-    "longname": "ffwd.module:server"
   },
   {
     "comment": "/**\n * To be used by FFWD projects to get the features of a project\n * @return {Object.<String,String>} name / path object\n */",
     "meta": {
       "filename": "index.js",
-      "lineno": 17,
+      "lineno": 45,
       "path": "node_modules/ffwd-utils/server",
       "vars": {
         "moduleName": null,
         "type": null,
         "name": null,
-        "info": null,
         "depPath": null,
         "d": null,
         "depTypes": null,
+        "featureCheck": null,
+        "check": null,
         "pkg": null,
         "deps": null,
         "typeDeps": null,
+        "info": null,
+        "info.depPath": null,
         "deps[undefined]": null
       }
     },
@@ -531,10 +281,70 @@
     "scope": "static"
   },
   {
+    "comment": "/**\n * Creates a list of minimatch compatible strings\n * @param  {String} wanted     a rule to be append to the path to moduleName\n * @param  {String} moduleName\n * @return {Array}             an array with the minimatch rules\n */",
+    "meta": {
+      "filename": "index.js",
+      "lineno": 103,
+      "path": "node_modules/ffwd-utils/server",
+      "vars": {
+        "wanted": null,
+        "files": null,
+        "": null
+      }
+    },
+    "description": "Creates a list of minimatch compatible strings",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "String"
+          ]
+        },
+        "optional": null,
+        "nullable": null,
+        "variable": null,
+        "defaultvalue": null,
+        "description": "a rule to be append to the path to moduleName",
+        "name": "wanted"
+      },
+      {
+        "type": {
+          "names": [
+            "String"
+          ]
+        },
+        "optional": null,
+        "nullable": null,
+        "variable": null,
+        "defaultvalue": null,
+        "name": "moduleName"
+      }
+    ],
+    "returns": [
+      {
+        "type": {
+          "names": [
+            "Array"
+          ]
+        },
+        "optional": null,
+        "nullable": null,
+        "variable": null,
+        "defaultvalue": null,
+        "description": "an array with the minimatch rules"
+      }
+    ],
+    "name": "featuresFiles",
+    "longname": "utils.featuresFiles",
+    "kind": "function",
+    "memberof": "utils",
+    "scope": "static"
+  },
+  {
     "comment": "/**\n * Loads the modules located in a directory with a file name\n * who does not starts with \"_\" and is not \"index.js\"\n *\n * @param {string} dirPath is the path of the directory\n * @return {object<string,*>} an object with the loaded modules and their name as object key\n */",
     "meta": {
       "filename": "index.js",
-      "lineno": 82,
+      "lineno": 124,
       "path": "node_modules/ffwd-utils/server",
       "vars": {
         "loaded": null,
@@ -578,10 +388,10 @@
     "scope": "static"
   },
   {
-    "comment": "/**\n * Utility to get the content of the online JSON schema\n * or its locally cached version.\n *\n * @param {string} cachedPath  - The path where the cached version should be\n * @param {miscCallback} done  - The callback handling the \n */",
+    "comment": "/**\n * Utility to get the content of the online JSON schema\n * or its locally cached version.\n *\n * @param {string} cachedPath  - The path where the cached version should be\n * @param {miscCallback} done  - The callback handling the\n */",
     "meta": {
       "filename": "index.js",
-      "lineno": 127,
+      "lineno": 169,
       "path": "node_modules/ffwd-utils/server",
       "vars": {
         "": null
@@ -623,11 +433,54 @@
     "scope": "static"
   },
   {
+    "comment": "/**\n * Map paths to static content\n * @param  {Object} conf              [description]\n * @param  {Express.Application} app  [description]\n */",
+    "meta": {
+      "filename": "index.js",
+      "lineno": 203,
+      "path": "node_modules/ffwd-utils/server",
+      "vars": {
+        "": null
+      }
+    },
+    "description": "Map paths to static content",
+    "params": [
+      {
+        "type": {
+          "names": [
+            "Object"
+          ]
+        },
+        "optional": null,
+        "nullable": null,
+        "variable": null,
+        "defaultvalue": null,
+        "description": "[description]",
+        "name": "conf"
+      },
+      {
+        "type": {
+          "names": [
+            "Express.Application"
+          ]
+        },
+        "optional": null,
+        "nullable": null,
+        "variable": null,
+        "defaultvalue": null,
+        "description": "[description]",
+        "name": "app"
+      }
+    ],
+    "name": "staticContent",
+    "longname": "utils.staticContent",
+    "kind": "function",
+    "memberof": "utils",
+    "scope": "static"
+  },
+  {
     "files": [
-      "/home/robert/sites/custom_modules/ffwd-documents/server/index.js",
-      "/home/robert/sites/custom_modules/ffwd-documents/node_modules/ffwd-modeling/server/index.js",
-      "/home/robert/sites/custom_modules/ffwd-documents/node_modules/ffwd-net/server/index.js",
-      "/home/robert/sites/custom_modules/ffwd-documents/node_modules/ffwd-utils/server/index.js"
+      "/home/vale/repos/ffwd-documents/server/index.js",
+      "/home/vale/repos/ffwd-documents/node_modules/ffwd-utils/server/index.js"
     ],
     "kind": "package",
     "name": null,

@@ -1,7 +1,0 @@
-{
-  "name": "moment",
-  "main": "index.js",
-  "_source": "/home/robert/sites/custom_modules/ffwd-documents/node_modules/moment/moment.js",
-  "_target": "*",
-  "_originalSource": "./node_modules/moment/moment.js"
-}

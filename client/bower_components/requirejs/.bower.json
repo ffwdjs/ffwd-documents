@@ -1,7 +1,0 @@
-{
-  "name": "requirejs",
-  "main": "index.js",
-  "_source": "/home/robert/sites/custom_modules/ffwd-documents/node_modules/requirejs/require.js",
-  "_target": "*",
-  "_originalSource": "./node_modules/requirejs/require.js"
-}

@@ -5,9 +5,12 @@
     "ffwd-app"
   ],
   "scripts": {
-    "postinstall": "./node_modules/bower/bin/bower i && ./node_modules/grunt-cli/bin/grunt serve",
     "test": "mocha -R tap test/server/specs/",
     "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ffwdjs/ffwd-documents.git"
   },
   "ffwd": {
     "scriptsCompiler": "browserify",
@@ -20,7 +23,7 @@
     "async": "^0.9.0",
     "backbone": "^1.1.2",
     "bower": "^1.3.5",
-    "ffwd-utils": "git://github.com/zeropaper/ffwd-utils",
+    "ffwd-utils": "git://github.com/ffwdjs/ffwd-utils",
     "grunt": "^0.4.5",
     "grunt-browserify": "^2.1.0",
     "grunt-cli": "^0.1.13",
@@ -37,7 +40,7 @@
     "jquery": "^2.1.1",
     "karma-requirejs": "^0.2.2",
     "load-grunt-tasks": "^0.5.0",
-    "marked": "^0.3.2",
+    "marked": "~0.3.2",
     "moment": "^2.7.0",
     "mysql": "^2.3.2",
     "node-polyglot": "^0.4.0",
@@ -46,7 +49,8 @@
     "underscore": "^1.6.0",
     "underscore.string": "^2.3.3",
     "validator": "^3.16.0",
-    "yfm": "^0.2.0"
+    "yfm": "^0.2.0",
+    "codemirror": "~4.4.0"
   },
   "optional": {
     "ffwd-modeling": "git+ssh://git@github.com:ffwdjs/ffwd-modeling",

@@ -50,7 +50,8 @@
     "underscore.string": "^2.3.3",
     "validator": "^3.16.0",
     "yfm": "^0.2.0",
-    "codemirror": "~4.4.0"
+    "codemirror": "~4.4.0",
+    "toYaml": "~1.0.0"
   },
   "optional": {
     "ffwd-modeling": "git+ssh://git@github.com:ffwdjs/ffwd-modeling",

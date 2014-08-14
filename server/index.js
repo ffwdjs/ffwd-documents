@@ -207,6 +207,8 @@ module.exports = function(config) {
             var id = _.str.slugify(subContent.context.title);
             subPages[id] = subContent.context;
             subPages[id].id = id;
+
+            subPages[id].path = path.join(path.dirname(file.replace(config.pages, '')), path.basename(file, '.md'));
             subPages[id].body = marked.parse(subContent.content);
           }
         });
@@ -307,6 +309,27 @@ module.exports = function(config) {
     });
   }
 
+  function staticCache(req, res, next) {
+    var hasQuery = !Object.keys(req.query || {}).length;
+    debug('should cache statically? %s', req.method || hasQuery);
+    if (req.method !== 'GET' || hasQuery) {
+      return next();
+    }
+
+    var originalEnd = res.end;
+    res.end = function() {
+      debug('caching request end', req, res.body);
+      originalEnd.apply(this, arguments);
+    };
+
+    var originalSend = res.send;
+    res.send = function() {
+      debug('caching request send', req, res.body);
+      originalSend.apply(this, arguments);
+    };
+    next();
+  }
+
   return {
     extendMenu: extendMenu,
 
@@ -318,6 +341,8 @@ module.exports = function(config) {
 
     docUpdateRequest: docUpdateRequest,
 
-    pageEditRender: pageEditRender
+    pageEditRender: pageEditRender,
+
+    staticCache: staticCache
   };
 };

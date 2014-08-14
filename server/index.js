@@ -114,7 +114,7 @@ module.exports = function(config) {
   }
 
   function pageEditRender(req, res, next) {
-    fs.readFile(app.get('views') +'/partials/page-edit.tpl', {
+    fs.readFile(app.get('views') +'/partials/page-edit'+ (req.query.edit === 'popup' ? '-popup' : '') +'.tpl', {
       encoding: 'utf8'
     }, function(nope, str) {
       if (nope) { return next(nope); }

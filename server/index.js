@@ -173,7 +173,24 @@ module.exports = function(config) {
       var content = yfm.read(filepath);
 
       function done() {
+        var parents = [];
+        var parts = req.url.split('/');
+        if (parts.length > 2) {
+          parts.shift();
+          parts.pop();
+          _.each(parts, function(part, p) {
+            parents.push({
+              title: part,
+              url: parts.slice(0, p + 1).join('/')
+            });
+          });
+        }
+
+
+
+        res.locals.page.parents = parents;
         res.locals.page.header = res.renderPartial('page-header');
+        res.locals.page.breadcrumbs = res.renderPartial('breadcrumbs');
         res.locals.page.footer = res.renderPartial('page-footer');
 
         res.locals.page.body = res.locals.page.body
@@ -213,6 +230,7 @@ module.exports = function(config) {
           }
         });
 
+
         debug('render pages', files.length);
         var categories = {};
         _.each(utils.weightened(subPages), function(file) {
@@ -220,6 +238,7 @@ module.exports = function(config) {
           categories[file.category].push(file);
         });
 
+        res.locals.page.sidebar = res.renderPartial('page-sidebar', {categories: categories});;
         res.locals.page.body = res.renderPartial('aggregated', {categories: categories});
         done();
       });
